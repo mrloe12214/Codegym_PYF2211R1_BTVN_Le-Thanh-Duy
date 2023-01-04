@@ -1,4 +1,3 @@
-
 a = int(input("Nhập a: a ="))
 b = int(input("Nhập b: b ="))
 c = int(input("Nhập c: c ="))
