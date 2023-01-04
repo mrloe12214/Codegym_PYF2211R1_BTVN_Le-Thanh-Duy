@@ -1,6 +1,6 @@
-a = int(input("Nhập a: a ="))
-b = int(input("Nhập b: b ="))
-c = int(input("Nhập c: c ="))
+a = float(input("Nhập a: a ="))
+b = float(input("Nhập b: b ="))
+c = float(input("Nhập c: c ="))
 if a == 0:
     x = -c/b
     print("Đây là phương trình bậc 1, Nghiệm là: x =", x)
@@ -17,4 +17,4 @@ else:
             import math
             x1 = (-b + math.sqrt(delta))/(2*a)
             x2 = (-b - math.sqrt(delta))/(2*a)
-            print("Nghiệm là: x1 =", x1,"x2 =",x2)
+            print("Nghiệm là: x1 =", x1,"; x2 =",x2)
