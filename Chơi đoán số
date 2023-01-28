@@ -1,0 +1,26 @@
+import random
+play = str(input("Bạn có sẵn sàng để chơi chưa? "))
+
+while play == "có":
+    DA = random.randrange(1,100,1)
+    Đoán_số = int(input("Hãy đoán 1 số nhé: "))
+    i = 1
+
+    while i < 7:
+        if Đoán_số < DA:
+            print("Sai rồi! Số bạn đoán nhỏ hơn con số may mắn. Bạn còn",7-i,"cơ hội nữa")
+            Đoán_số=int(input("Hãy đoán lại 1 số nhé: "))
+        elif Đoán_số > DA:
+            print("Sai rồi! Số bạn đoán lớn hơn con số may mắn. Bạn còn",7-i,"cơ hội nữa")
+            Đoán_số=int(input("Hãy đoán lại 1 số nhé: "))
+        else:
+            print("Chúc mừng, bạn đã đoán đúng!")
+            print("Con số may mắn là: ",DA)
+            play = str(input("Bạn có muốn chơi tiếp không? "))
+            break
+        i += 1
+    print("Tiếc quá, bạn đã hết cơ hội đoán số!")
+    print("Con số may mắn là: ",DA)
+    play = str(input("Bạn có muốn chơi tiếp không? "))
+   
+print("Được rồi, tạm biệt bạn! >_<!")
